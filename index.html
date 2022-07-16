@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>GMS</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/rel.png">
 </head>
+
 <body>
     <script src="main.js"></script>
     <header>
@@ -16,7 +19,7 @@
             <div class="nav-icons">
                 <i class='bx bx-bell bx-tada' id="bell-icon"><span></span></i>
                 <i class='bx bxs-download'></i>
-                <div class="menu-icon">
+                <div class="menu-icon" id="modal-op">
                     <div class="line1"></div>
                     <div class="line1"></div>
                     <div class="line1"></div>
@@ -25,17 +28,21 @@
             <div class="menu">
                 <img src="/images/unnamed.jpg" alt="CR">
                 <div class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#Trending">Trending</a></li>
-                <li><a href="#new">New Games</a></li>
-                <li><a href="#Action">Action Games</a></li>
-                <li><a href="contact">Contact Us</a></li>
-            </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#Trending">Trending</a></li>
+                    <li><a href="#new">New Games</a></li>
+                    <li><a href="#Action">Action Games</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                </div>
             </div>
         </div>
     </header>
 
+    <dialog class="modal" id="modal">
+        <button id="close-modal" class="btn">Band Karo</button>
+    </dialog>
 
+    <script src="script.js"></script>
 
 
 
@@ -60,4 +67,5 @@
 
 
 </body>
+
 </html>
